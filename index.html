@@ -23,8 +23,8 @@
         class="cookies"
       />
       <p>We use cookies to optimize user experience and content.</p>
-      <button type="button">Accept</button>
-      <i class="fa-solid fa-xmark close-icon"></i>
+      <button type="button" onclick="closeModal()">Accept</button>
+      <i class="fa-solid fa-xmark close-icon" onclick="closeModal()"></i>
     </div>
 
     <script>
@@ -34,6 +34,9 @@
         setTimeout(() => {
           modalbox.style.display = 'block';
         }, 1000);
+      }
+      function closeModal() {
+        modalbox.style.display = 'none';
       }
     </script>
   </body>
